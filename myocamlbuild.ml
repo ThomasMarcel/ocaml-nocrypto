@@ -8,6 +8,6 @@ let ocamlfind_and_pack = function
   | _ -> ()
 
 let () = dispatch Ocb_stubblr.(
-  init & ccopt ~tags:["accelerate"] "-DACCELERATE -mssse3 -maes -mpclmul"
+  init & ccopt ~tags:["accelerate"] ""
   & ocamlfind_and_pack
 )
